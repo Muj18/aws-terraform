@@ -39,13 +39,11 @@ variable "private_subnet_cidr_4" {
   description = "CIDR for the private subnet 4"
 }
 
-variable "project_database_name" {
-  default     = "mujib"
-  description = "RDS root user name"
+variable "project_database_password" {
+  description = "Password for the RDS database"
   sensitive   = true
 }
 
-variable "project_database_password" {
-  description = "RDS"
-  sensitive   = true
+variable "project_database_name" {
+  description = "Username for the RDS database"
 }
