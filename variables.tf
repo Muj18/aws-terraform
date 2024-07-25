@@ -46,7 +46,6 @@ variable "project_database_name" {
 }
 
 variable "project_database_password" {
-  default     = "liverpoolfc"
-  description = "RDS root password. This may show up in the logs and will be in the state file"
+  description = "RDS"
   sensitive   = true
 }
